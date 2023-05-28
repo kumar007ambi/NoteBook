@@ -32,6 +32,30 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {/* Here Two li element should be removed */}
+            <li className="nav-item">
+                  <Link
+                    to="/notes"
+                    className={`nav-link ${
+                      location.pathname === "/notes" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                  >
+                    Your Notes
+                  </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link
+                    to="/"
+                    className={`nav-link ${
+                      location.pathname === "/" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                  >
+                    AddNote
+                  </Link>
+                </li>
               <li className="nav-item">
                 <Link
                   to="/about"
@@ -42,8 +66,9 @@ function Navbar() {
                   About
                 </Link>
               </li>
-            </ul>
 
+            </ul>
+            {/* This li appears after the successfull login */}
             {localStorage.getItem("token") ? (
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
