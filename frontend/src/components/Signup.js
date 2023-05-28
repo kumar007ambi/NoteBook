@@ -99,50 +99,6 @@ function SignUp(props) {
     }
   };
 
-  //   const [credentials, setCredentials] = useState({ email: "", name: "", password: "", cpassword: "" })
-  //   let history = useNavigate();
-
-  //   const location = useLocation();
-  //   const onchange = (e) => {
-  //       setCredentials({ ...credentials, [e.target.name]: e.target.value })
-
-  //       const { password, cpassword } = credentials;
-
-  //   }
-
-  // const handleClick = async (e) => {
-  //     e.preventDefault();
-  //     const { email, name, password } = credentials;
-
-  //     const response = await fetch("api/auth/createuser", {
-  //         method: 'POST',
-  //         headers: {
-  //             'Content-Type': 'application/json',
-  //         },
-  //         body: JSON.stringify({ email, name, password })
-
-  //     });
-  //     const json = await response.json();
-  //     console.log(json);
-
-  //     let pass = document.querySelector('#password').value;
-  //     let cpass= document.querySelector('#cpassword').value;
-
-  //     if (json.success) {
-
-  //         if(pass==cpass){
-  //         localStorage.setItem('token', json.authtoken);
-  //         history("/");
-  //         props.showAlert("Account created successfully", "success");
-  //         }else{
-  //             props.showAlert("Passwords didn't match! Try again.", "danger");
-  //         }
-  //     } else {
-  //         props.showAlert("Invalid Details! "+ json.error , "danger")
-
-  //     }
-
-  // }
 
   return (
     <>
